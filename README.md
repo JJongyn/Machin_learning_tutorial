@@ -13,7 +13,7 @@
 
 
 ## Audio Machine learning
-### [1. Audio Classification](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Audio%20machine%20learning/Audio_Classification)
-### [2. Audio Classification - MFCC](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Audio%20machine%20learning/MFCC_Audio_Classification)
-### [3. Speech Recognition](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Audio%20machine%20learning/Speech_Recognition)
+### [1. Audio Classification](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Audio%20machine%20learning/Audio_Classification/Audio_Classification.ipynb)
+### [2. Audio Classification - MFCC](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Audio%20machine%20learning/MFCC_Audio_Classification/MFCC_Audio_Classification.ipynb)
+### [3. Speech Recognition](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Audio%20machine%20learning/Speech_Recognition/Speech_Recognition.ipynb)
 
