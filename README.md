@@ -8,8 +8,8 @@
 ### [4. KNN](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/kNN)
 
 
-## Computer Vision
-### [1. LeNet](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Computer_Vision/LeNet)
+## Computer Vision (현재 공부중)
+### [1. LeNet](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Computer_Vision/LeNet/LeNet2.ipynb)
 
 
 ## Audio Machine learning
