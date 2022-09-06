@@ -13,7 +13,7 @@
 ### [2. LeNet](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Computer_Vision/LeNet/LeNet2.ipynb)
 
 ## 파이썬 라이브러리를 활용한 머신러닝 - 한빛 미디어
-### [1. Introduction](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Machine%20Learning%20with%20Python/1.introduction/iris_data)
+### [1. Introduction](https://github.com/JJongyn/Machine_learning_tutorial/blob/master/Machine%20Learning%20with%20Python/1.introduction/iris_data.ipynb)
 
 ## Audio Machine learning
 ### [1. Audio Classification](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Audio%20machine%20learning/Audio_Classification/Audio_Classification.ipynb)
