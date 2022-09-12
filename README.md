@@ -2,10 +2,10 @@
 
 ## 기초
 
-### [1. Data Preprocessing](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Data_Preprocessing)
-### [2. Linear Regression](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Linear%20regression)
-### [3. Logistic Regression](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Logistic%20regression)
-### [4. KNN](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/kNN)
+### [1. Data Preprocessing](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/basic/Data_Preprocessing)
+### [2. Linear Regression](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/basic/Linear%20regression)
+### [3. Logistic Regression](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/basic/Logistic%20regression)
+### [4. KNN](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/basic/kNN)
 
 
 ## Computer Vision (현재 공부중)
