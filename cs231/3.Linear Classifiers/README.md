@@ -37,8 +37,20 @@
 
 단순한 Loss function을 살펴보면 현재 입력 데이터 x, 가중치 파라미터 W 값을 통해 나온 score, y_pred 값과 입력 데이터에 대한 정답값인 y값을 Loss function에 넣음으로써 loss를 계산할 수 있다. 
 
-대표적인 Loss function의 예를 살펴보자.
+그럼 여기서 L에 해당하는 대표적인 Loss function의 예를 살펴보자.
 
 ### 1. SVM Loss
 
 ![43](./img/498_FA2019_lecture031024_43.jpg)
+SVM Loss function의 식을 살펴보면 max(0, 예측 score - 정답 score + 1)의 형태이다. 즉, 현재 정답인 class의 score가 정답이 아닌 class의 score보다 높게 된다면 이는 잘 예측한 것 이므로 loss가 0이 된다. 그게 아닌 다른 값으로 예측 했다면 0보다 큰 값이 loss값이 되어 이를 더해주게 된다.
+
+![45](./img/498_FA2019_lecture031024_45.jpg)
+예를 통해 loss를 계산해보면 해당 이미지의 정답은 cat이고 cat에 해당하는 score는 3.2가 된다. 나머지 score들과의 계산을 통해 loss를 계산하면 각각 2.9, 0이 되고 이때의 loss는 2.9 + 0 = 2.9가 된다. 이런식으로 car, frog에 대해서도 계산을 차례대로 해보면 아래와 같이 각각의 loss가 계산되고 이들의 합을 class 수로 나눠줌으로써 전체 데이터셋에 대한 loss값을 계산할 수 있다.
+
+![48](./img/498_FA2019_lecture031024_48.jpg)
+
+만약 loss가 0이면 이때의 W값이 가장 최적인 파라미터 일까? 정답은 아니다. 만약 그렇게 되면 **이 파라미터는 training set에 너무 편향되어 학습된 파라미터이기 때문에 새로운 데이터에 대해 좋은 성능을 보일 수 없다.** 이를 해결하는 방법은 Regularization 방법을 사용하는 것이다.
+
+## Regularization
+
+![62](./img/498_FA2019_lecture031024_62.jpg)
