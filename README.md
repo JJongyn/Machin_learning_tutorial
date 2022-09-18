@@ -8,9 +8,13 @@
 ### [4. KNN](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/basic/kNN)
 
 
-## Computer Vision (현재 공부중)
-### [1. MLP](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Computer_Vision/MLP/MLP.ipynb)
-### [2. LeNet](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Computer_Vision/LeNet/LeNet2.ipynb)
+## Computer Vision - cs231n
+
+### [2. Image Classification]()
+### [3. Linear Classifiers](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/cs231/3.Linear%20Classifiers)
+
+### [+ MLP](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Computer_Vision/MLP/MLP.ipynb)
+### [+ LeNet](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Computer_Vision/LeNet/LeNet2.ipynb)
 
 ## 파이썬 라이브러리를 활용한 머신러닝 - 한빛 미디어
 ### [1. Introduction](https://github.com/JJongyn/Machine_learning_tutorial/blob/master/Machine%20Learning%20with%20Python/1.introduction/iris_data.ipynb)
