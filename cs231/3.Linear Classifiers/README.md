@@ -5,7 +5,7 @@
 3장에서는 선형 분류 기법에 대해서 알아보고 이 모델이 최적의 파라미터를 가지기 위한 정량적 기법 loss function에 대해서도 알아보고자 한다.
 
 ![12](./img/498_FA2019_lecture031024_12.jpg)
-위의 그림을 보면 (32x32x3)의 이미지가 입력이 되고(x), 최적의 모델을 찾기위해 조정되는 파라미터(W, b)값이 존재한다. 이때 출력으로 10개의 class score가 나와야 하므로 W값의 크기는 (10, 3072), b는 (10,0)이 되면 f = Wx + b의 크기를 충족할 수 있다.
+위의 그림을 보면 (32x32x3)의 이미지가 입력되고(x), 최적의 모델을 찾기위해 조정되는 파라미터(W, b)값이 존재한다. 이때 출력으로 10개의 class score가 나와야 하므로 W값의 크기는 (10, 3072), b는 (10,0)으로 f = Wx + b의 크기를 충족할 수 있다.
 
 이제 선형 분류기를 3가지의 관점을 통해 확인해보자.
 
@@ -17,7 +17,7 @@
 
 ### 2. Visual Viewpoint
 ![23](./img/498_FA2019_lecture031024_23.jpg)
-위의 그림은 선형 분류기를 통해 학습된 각 class의 template이다. 여기서 의미하는 것은 우리가 어떤 이미지를 예측하고자 한다면 위의 template과 가장 유사한 class로 예측을 하게 되는 것이다. 하지만 하나의 template만을 사용하기 때문에 색, 방향 등에 따른 정확한 class를 예측하기 어렵다.
+위의 그림은 선형 분류기를 통해 학습된 각 class의 template이다. 여기서 의미하는 것은 우리가 어떤 이미지를 예측하고자 한다면 위의 template과 가장 유사한 class로 예측을 하게 된다는 것이다. 하지만 하나의 template만을 사용하기 때문에 색, 방향 등에 따른 정확한 class를 예측하기 어렵다.
 
 ### 3. Geometric Viewpoint
 ![28](./img/498_FA2019_lecture031024_28.jpg)
@@ -49,8 +49,20 @@ SVM Loss function의 식을 살펴보면 max(0, 예측 score - 정답 score + 1)
 
 ![48](./img/498_FA2019_lecture031024_48.jpg)
 
-만약 loss가 0이면 이때의 W값이 가장 최적인 파라미터 일까? 정답은 아니다. 만약 그렇게 되면 **이 파라미터는 training set에 너무 편향되어 학습된 파라미터이기 때문에 새로운 데이터에 대해 좋은 성능을 보일 수 없다.** 이를 해결하는 방법은 Regularization 방법을 사용하는 것이다.
+만약 loss가 0이면 이때의 W값이 가장 최적인 파라미터일까? 정답은 아니다. 만약 그렇게 되면 **이 파라미터는 training set에 너무 편향되어 학습된 파라미터이기 때문에 새로운 데이터에 대해 좋은 성능을 보일 수 없다.** 이를 해결 하기위해 Regularization이라는 방법을 사용한다.
 
 ## Regularization
 
 ![62](./img/498_FA2019_lecture031024_62.jpg)
+Regularization의 식을 보면 앞부분의 Data loss는 위에서 loss값을 구하기 위한 식이고 뒤에 R(W)값이 Regularization에 대한 식이 된다. R(W)의 대표적인 방법으로는 L1 regularization, L2 regularization 방법이 있다. 
+
+### L1 regularization
+
+L1 regularization을 알기 위해서는 L1 norm에 대해 알아야 한다. L1 norm은 벡터 p,q가 있을 때 각 원소들의 차이의 절대값 합을 의미한다. L1 regularization은 Data loss값에 각 가중치 절대값의 합을 추가하여 표현할 수 있다. 이를 통해 가중치가 너무 크지 않은 방향으로 학습되게 하는 효과를 줄 수 있다. 하지만 가중치를 업데이트하는 과정에서 가중치가 0이 될 수 있다.
+
+
+### L2 regularization
+
+L2 regularization도 마찬가지로 L2 norm이 존재한다. L2 norm은 각 원소의 제곱의 합을 제곱근한 것을 의미한다. 이 항을 Data loss에 추가하여 가중치를 규제한다. 가중치를 업데이트하면서 전체적인 가중치 값을 균등하게 작게하여 모델의 과적합을 막을 수 있다. 일반적으로 L2 regularization이 더 좋은 성능을 보인다.
+
+> **Regularization**은 모델의 과적합을 막는 대표적인 방법이다. **L1 regularization**은 cost function에 L1 항을 추가한 것으로 가중치를 업데이트 하면서 특정 가중치들은 0이된다. 이렇게 함으로써 모델에 큰 영향을 주는 가중치들만 남게 된다.(feture selection 가능) **L2 regularization**은 cost function에 L2항을 추가한 것으로 가중치를 업데이트하면서 전체적으로 가중치가 작아진다. 모델의 복잡도를 낮추고 큰 가중치들을 작게할 수 있으나 가중치를 0으로 만들지 못한다.
