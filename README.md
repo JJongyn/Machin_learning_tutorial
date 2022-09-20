@@ -12,7 +12,7 @@
 
 ### [2. Image Classification]()
 ### [3. Linear Classifiers](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/cs231/3.Linear%20Classifiers)
-
+### [4. Optimization](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/cs231/4.Optimization)
 ### [+ MLP](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Computer_Vision/MLP/MLP.ipynb)
 ### [+ LeNet](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/Computer_Vision/LeNet/LeNet2.ipynb)
 
