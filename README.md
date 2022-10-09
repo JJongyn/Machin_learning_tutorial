@@ -8,6 +8,11 @@
 ### [4. KNN](https://github.com/JJongyn/Machine_learning_tutorial/tree/master/basic/kNN)
 
 
+## Sequence
+
+### [1. RNN](https://github.com/JJongyn/Machine_learning_tutorial/blob/master/Sequence/RNN/RNN.ipynb)
+
+
 ## Computer Vision - cs231n
 
 ### [2. Image Classification]()
